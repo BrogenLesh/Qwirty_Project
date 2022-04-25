@@ -1,0 +1,48 @@
+.items{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: flex-start;
+    flex-grow: 1 1 0;
+}
+.item{
+    flex: 0.7, 1, 0;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px;
+    flex: 30%;
+    flex-grow: 1,0;
+}
+.item-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: medium;
+    color: #425534;
+}
+.add-item{
+    background-color: #255;
+    color: white;
+    border-radius: 3px;
+}
+.fact-line{
+    background-color: #255;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+}
+.item-description{
+    background-color: #255;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+}
+@media (max-width:768px){
+    .items{
+        font-size:larger;
+        flex-basis: 100%;
+}
+}

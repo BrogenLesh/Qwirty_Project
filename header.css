@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+.main-nav{
+    display: flex;
+    background-color: #255;
+    padding: 2px;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-nav{
+    display: flex;
+    padding: 10px;
+    border: none;
+    border-bottom: 10px;
+    color: #255;
+    justify-content: space-between;
+}
+.short-width{
+    display: flex;
+    list-style: none;
+}
+.full-width{
+    display: none;
+    list-style: none;
+    gap: 20px;
+} 
+@media (min-width:768px){  
+    .short-width{ 
+        display: none;
+    }
+    .full-width{
+        display: flex;
+    }
+}
+.nav-list{
+    display: flex;
+    color: white;
+    gap: 10px;
+    list-style: none;
+
+}
+.nav-list li:last-of-type a { 
+    border-right: none; 
+} 
+.company-name{
+    font-size: 2em;
+}
+.credit-offer{
+    display: flex;
+    align-items: center;
+    background-color: #255;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
